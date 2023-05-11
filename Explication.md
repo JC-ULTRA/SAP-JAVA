@@ -1,7 +1,8 @@
 En este archivo se encuentra la investigación que he desarrollado con especto a la conexión entre SAP[^1] y las aplicaciones JAVA.
 
 
-Descargar e instalar el JCo en la computadora donde se ejecutará la aplicación JAVA. El JCo se puede descargar desde la página de soporte de SAP. Es importante asegurarse de que se descargue la versión adecuada del JCo para la versión de SAP que se está utilizando. La instalación del JCo es sencilla y consiste en descomprimir el archivo descargado en una ubicación adecuada en la computadora.
+Como primer paso es neceario ir al portal de SAP para descargar e instalar el JCo[^2] en la computadora donde se ejecutará la aplicación JAVA. El JCo se puede descargar desde la página de soporte de SAP. Es muy importante asegurarse de que se está descargando la versión adecuada del JCo para la versión de SAP que se está utilizando. Una vez que se descargó será necesario descomprimir el archivo descargado en una ubicación adecuada en la computadora.
 
+[^1]: SAP es uno de los principales productores mundiales de software para gestión de procesos de negocio, y desarrolla soluciones que facilitan el procesamiento eficaz de datos y el flujo de información entre las organizaciones.
 
-[^1]: SAP 
+[^2]: JCo (Java Connector) es un componente intermedio y una librería de desarrollo que permite a una aplicación Java comunicarse con SAP por medio de una RFC.
