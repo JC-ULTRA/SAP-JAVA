@@ -8,30 +8,54 @@ En este archivo se encuentra la investigación que he desarrollado con especto a
 [^2]: JCo (Java Connector) es un componente intermedio y una librería de desarrollo que permite a una aplicación Java comunicarse con SAP por medio de una RFC.
 
 2. Utilizando el IDE (entorno de desarrollo integrado) donde se estárá trabajando el proyecto abriremos el Jco.
+
 2.1. Ya en el proyecto se da clic con el botón derecho del mouse en la carpeta del proyecto en la que se desea incluir el archivo JCo.
+
+<div align="center">
 
 ![image](https://github.com/JC-ULTRA/SAP-JAVA/assets/123017193/700136a6-c7e2-42e5-a1cc-d5836de9b12d)
 
+</div>
+
 2.2. En el menú que aparece con el clic derecho, hay que seleccionar la opción "Build Path" y luego "Configure Build Path".
 
+<div align="center">
 
+![image](https://github.com/JC-ULTRA/SAP-JAVA/assets/123017193/a7f1217b-701e-4d34-91db-0e48c4345827)
 
-En la ventana de "Propiedades del proyecto", selecciona la pestaña "Librerías" y haz clic en el botón "Agregar JARs...".
+</div>
 
-Busca el archivo JCo que descargaste en el paso 1 y selecciónalo.
+2.3 Ahora en la ventana de "Propiedades del proyecto", se debe seleccionar la pestaña "Librerías" y hacer clic en el botón "Agregar JARs...".
 
-Haz clic en "Aceptar" para agregar el archivo JCo a tu proyecto.
+<div align="center">
+
+![image](https://github.com/JC-ULTRA/SAP-JAVA/assets/123017193/f2a14387-6080-48d8-9033-3402b27115ed)
+
+</div>
+
+2.4 Debemos buscar el archivo JCo que se descargó y seleccionar para utilizar y hacer clic en "Aceptar" para agregar el archivo JCo al proyecto.
 
 
 3. Una vez descargado en la ubicación se debe configurar la conexión en el archivo de la aplicación JAVA. Este archivo se puede encontrar en el directorio de la aplicación o en una ubicación específica para archivos de configuración el cual suele tener una extensión _".properties"_ o _".xml"_. Probablemente un archivo _".properties"_ podría componerse de los siguientes parametros:
 
+```
 sap.server.name=nombre_o_dirección_IP_del_servidor_SAP
 sap.instance.number=número_de_instancia_de_SAP
 sap.port.number=número_de_puerto_para_conectarse_a_SAP
 
+```
+
+E importar las clases de la libreria en el código: 
+
+```
+
+import com.sap.conn.jco.JCoDestination[^3];
+import com.sap.conn.jco.JCoException[^4];
+
+```
+
 Aunque cabe destacar que estos son solo ejemplos y los nombres reales de los parámetros varian de acuerdo al proyecto de negocio.
 
-3. También debe usarse el JCo para conectar la aplicación de java con SAP, como librería de JAVA que nos debería permitir llamar a funciones del mismo SAP desde el código JAVA e importar la librería en el código. Por ejemplo, podrías hacer algo así:
+[^3]: JCoDestination se utiliza para representar una conexión a un sistema SAP, y se utiliza para enviar y recibir datos entre SAP y una aplicación Java
 
-import com.sap.conn.jco.JCoDestination; import com.sap.conn.jco.JCoException;
-
+[^4]: JCoException se utiliza para manejar errores y excepciones que puedan ocurrir durante el proceso de conexión.
