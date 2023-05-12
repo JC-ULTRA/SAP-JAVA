@@ -45,12 +45,12 @@ sap.port.number=número_de_puerto_para_conectarse_a_SAP
 
 ```
 
-E importar las clases de la libreria en el código: 
+E importar las clases JCoDestination[^3] & JCoException[^4] de la libreria en el código: 
 
 ```
 
-import com.sap.conn.jco.JCoDestination[^3];
-import com.sap.conn.jco.JCoException[^4];
+import com.sap.conn.jco.JCoDestination;
+import com.sap.conn.jco.JCoException;
 
 ```
 
